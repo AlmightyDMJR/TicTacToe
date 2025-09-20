@@ -4,6 +4,8 @@ let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container")
 let msg = document.querySelector("#msg");
 
+const clickSound = new Audio("click.mp3");
+
 let turnO =true;
 let count = 0;
 
@@ -30,6 +32,9 @@ const resetGame = () => {
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         
+        clickSound.currentTime = 0; 
+        clickSound.play();
+
         if(turnO){
         box.innerText = "O";
         turnO=false;
