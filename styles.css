@@ -1,0 +1,113 @@
+*{
+    margin:0 ;
+    padding :0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:aqua;
+    text-align: center;
+}
+.container {
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.game{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+.box{
+    height: 18vmin ;
+    width: 18vmin;
+    border-radius:1rem ;
+    border: none;
+    
+    box-shadow:0 0 1rem rgba(red, rgb(25, 1, 36), blue, alpha) ;
+    font-size: 8vmin;
+    color: black;
+    font-weight: 700;
+    background-color: #ffffc7; 
+}
+.box:hover {
+  transform: translateY(-1px) scale(1.1);
+  background: linear-gradient(145deg, #0004fe, #4facfe);
+  box-shadow: 0 0 2px #00f2fe;
+  
+  cursor: pointer;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: beige;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+
+}
+#reset-btn:hover{
+  transform: translateY(-5px) scale(1.1);
+  background: linear-gradient(145deg, #e69854, #eb2121);
+  box-shadow: 0 0 2px #00f2fe;
+  cursor: pointer;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: beige;
+    border-radius: 1rem;
+    border: none;
+    padding:1rem;
+    margin:1.5rem;
+
+}
+#new-btn:hover{
+  transform: translateY(-5px) scale(1.1);
+  background: linear-gradient(145deg, #e69854, #eb2121);
+  box-shadow: 0 0 2px #00f2fe;
+  cursor: pointer;
+}
+
+#msg {
+    background: linear-gradient(90deg, #3c27f1, #f3311f);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+    font-weight: 700;
+    font-size: 6vmin;
+}
+.msg-container{
+    height: 20vmin;
+    padding: 2rem;
+    margin-top: 1rem;
+    
+}
+.hide{
+    display: none;
+}
+h1 {
+  background: linear-gradient(90deg, #0c0c0c, #3d4c3f);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 6rem;
+  line-height: 6rem;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+  margin-top: 2rem;
+  
+}
